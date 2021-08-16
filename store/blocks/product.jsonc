@@ -1,6 +1,6 @@
 {
   "store.product": {
-    "children": [
+    "children": ["product-details"
       
     ]
   }

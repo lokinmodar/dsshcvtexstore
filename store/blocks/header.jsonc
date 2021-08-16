@@ -27,7 +27,7 @@
     "children": [
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
-      "vtex.menu@2.x:menu#websites",
+      "menu#websites",
       "search-bar",
       "locale-switcher",
       "login",
@@ -77,7 +77,7 @@
   "drawer": {
     "children": []
   },
-  "vtex.menu@2.x:menu#websites": {
+  "menu#websites": {
     "props": {
       "items": [
         {
@@ -121,14 +121,14 @@
         "text": "Shop"
       }
     },
-    "blocks": ["vtex.menu@2.x:submenu#shop"] // Defining a submenu
+    "blocks": ["submenu#shop"] // Defining a submenu
   },
-  "vtex.menu@2.x:submenu#shop": {
+  "submenu#shop": {
     "children": [
-      "vtex.menu@2.x:menu#submenushop"
+      "menu#submenushop"
     ]
   },
-  "vtex.menu@2.x:menu#submenushop": {
+  "menu#submenushop": {
     "children": [
       /* "menu-item#shop" */
     ]

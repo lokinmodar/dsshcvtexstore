@@ -1,6 +1,6 @@
 {
   "store.home": {
-    "blocks": ["rich-text", "info-card#button-right", "minicart-product-list#example"]
+    "blocks": ["rich-text", "info-card#button-right", "shelf#example", "minicart-product-list#example", "footer"]
   },
   "rich-text": {
     "props": {
@@ -20,6 +20,9 @@
       "callToActionUrl": "/sale/d",
       "textAlignment": "center"
     }
+  },
+  "shelf#example": {
+    "blocks": ["product-summary"]
   },
   "minicart-product-list#example": {
     "blocks": ["product-list"]
