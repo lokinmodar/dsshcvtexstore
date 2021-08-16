@@ -1,7 +1,5 @@
 {
   "store.product": {
-    "children": ["product-details"
-      
-    ]
+    "children": ["product-details"]
   }
 }

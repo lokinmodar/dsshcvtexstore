@@ -1,6 +1,9 @@
 {
   "store.home": {
-    "blocks": ["rich-text", "info-card#button-right", "shelf#example", "minicart-product-list#example", "footer"]
+    "blocks": ["rich-text", "info-card#button-right", "shelf#example", "minicart-product-list#example"],
+    "props": {
+      "color": "red"
+    }
   },
   "rich-text": {
     "props": {

@@ -14,13 +14,19 @@
   },
   "flex-layout.row#footer": { 
     "children": [
-      "image"
+      "image", "rich-text#gugg"
     ]
   },
   "image": {
     "props": {
       "width": 100,
-      "src": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg"
+      "src": "/assets/brand/VTEX_pink_RGB.svg"  
+    }
+  },
+  "rich-text#gugg": {
+    "props": {
+      "text": "**Hello, World!**",
+      "textPosition": "CENTER"
     }
   }
 }
