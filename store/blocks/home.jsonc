@@ -1,13 +1,22 @@
 {
   "store.home": {
     "blocks": [
-      "rich-text",
-      "info-card#button-right",
-      "shelf#example",
-      "minicart-product-list#example"
+      "tab-layout#categorias",
+      "slider-layout",
+      "search-result-layout.customQuery#home",
+      "tab-layout#home"
+      /*  "shelf#example",
+      "minicart-product-list#example" */
     ],
     "props": {
       "color": "red"
+    }
+  },
+  "tab-layout#home": {
+    "children": ["tab-list#home", "tab-content#home"],
+    "props": {
+      "blockClass": "home",
+      "defaultActiveTabId": "home1"
     }
   },
   "rich-text": {
@@ -16,23 +25,68 @@
       "textPosition": "CENTER"
     }
   },
-  "info-card#button-right": {
+  "tab-layout#categorias": {
+    "children": []
+  },
+  "tab-list#home": {
+    "children": ["tab-list.item#home1", "tab-list.item#home2"]
+  },
+  "tab-list.item#home1": {
     "props": {
+      "tabId": "home1",
+      "label": "Home 1",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#home2": {
+    "props": {
+      "tabId": "home2",
+      "label": "Home 2"
+    }
+  },
+  "tab-content#home": {
+    "children": ["tab-content.item#home1", "tab-content.item#home2"]
+  },
+  "tab-content.item#home1": {
+    "children": ["shelf#home"],
+    "props": {
+      "tabId": "home1"
+    }
+  },
+  "tab-content.item#home2": {
+    "children": [
+      "shelf#home",
+      "info-card#home" /* ,
+      "rich-text#question",
+      "rich-text#link",
+      "newsletter" */
+    ],
+    "props": {
+      "tabId": "home2"
+    }
+  },
+
+  "shelf#home": {
+    "blocks": ["product-summary"]
+  },
+  "minicart-product-list#home": {
+    "blocks": ["product-list"]
+  },
+
+  "info-card#home": {
+    "props": {
+      "id": "info-card-home",
       "isFullModeStyle": false,
-      "textPosition": "right",
-      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-rosa-min.png",
-      "headline": "Vintage Pink",
-      "subhead": "Give your kitchen a boho style adding vintage apparels.<br>Available until January 2020.",
-      "callToActionMode": "button",
-      "callToActionText": "Explore",
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Clearance Sale",
+      "callToActionText": "DISCOVER",
       "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-home",
       "textAlignment": "center"
     }
   },
-  "shelf#example": {
-    "blocks": ["product-summary"]
-  },
-  "minicart-product-list#example": {
-    "blocks": ["product-list"]
+  "search-result-layout.customQuery#home": {
+    "props": {}
   }
 }

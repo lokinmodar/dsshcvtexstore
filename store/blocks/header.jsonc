@@ -6,18 +6,30 @@
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header-layout.desktop": {
-    "children": [
-      "sticky-layout#desktop"
-    ]
+    "children": ["flex-layout.row#1-desktop", "sticky-layout#4-desktop"]
   },
-  "sticky-layout#desktop": {
+
+  "flex-layout.row#1-desktop": {
+    "children": ["telemarketing"],
+    "props": {
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "sticky-layout#4-desktop": {
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#desktop"]
+    "children": ["flex-layout.row#4-desktop"]
   },
-  "flex-layout.row#desktop": {
+  "flex-layout.row#4-desktop": {
     "props": {
+      "blockClass": "main-header",
       "horizontalAlign": "center",
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
@@ -26,43 +38,44 @@
     },
     "children": [
       "flex-layout.col#logo-desktop",
+      "flex-layout.col#category-menu",
       "flex-layout.col#spacer",
-      "menu#websites",
       "search-bar",
       "locale-switcher",
       "login",
       "minicart.v2"
     ]
   },
-  "flex-layout.col#spacer": {
-    "props": {
-      "width": "grow"
-    }
-  },
   "flex-layout.col#logo-desktop": {
     "props": {
       "verticalAlign": "middle"
     },
-    "children": ["logo"]
+    "children": ["logo#desktop"]
   },
-  "logo": {
+  "flex-layout.col#category-menu": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["vtex.menu@2.x:menu#category-menu"]
+  },
+  "logo#desktop": {
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg",
-      "width": "80"
+      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
+      "width": "180"
     }
   },
   "header-layout.mobile": {
-    "children": ["sticky-layout#mobile"]
+    "children": ["sticky-layout#1-mobile"]
   },
-  "sticky-layout#mobile": {
-    "children": ["flex-layout.row#mobile"]
+  "sticky-layout#1-mobile": {
+    "children": ["flex-layout.row#1-mobile"]
   },
-  "flex-layout.row#mobile": {
+  "flex-layout.row#1-mobile": {
     "children": [
       "drawer",
-      "logo",
+      "logo#mobile",
       "flex-layout.col#spacer",
       "login",
       "minicart.v2"
@@ -75,63 +88,26 @@
     }
   },
   "drawer": {
-    "children": []
+    "children": ["menu#drawer"]
   },
-  "menu#websites": {
+
+  "menu#drawer": {
+    "children": [
+      "menu-item#category-apparel",
+      "menu-item#category-home",
+      "menu-item#more"
+    ],
     "props": {
-      "items": [
-        {
-          "id": "menu-item-shop",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "noFollow": false,
-            "tagTitle": "Shop",
-            "text": "Shop"
-          }
-        },
-        {
-          "id": "menu-item-about-us",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "/about-us",
-            "noFollow": false,
-            "tagTitle": "about-us",
-            "text": "About Us"
-          }
-        }
-      ]
+      "orientation": "vertical"
     }
   },
-  "menu-item#shop": {
-    "props": {
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Shop",
-        "text": "Shop"
-      }
-    },
-    "blocks": ["submenu#shop"] // Defining a submenu
-  },
-  "submenu#shop": {
-    "children": [
-      "menu#submenushop"
-    ]
-  },
-  "menu#submenushop": {
-    "children": [
-      /* "menu-item#shop" */
-    ]
-  }
 
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
+      "width": "70"
+    }
+  }
 }

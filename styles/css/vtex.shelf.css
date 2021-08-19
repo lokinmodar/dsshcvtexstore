@@ -28,3 +28,8 @@
 .slide{
   margin: 10px;
 }
+
+.slide {
+  min-width: 10%;
+  border: 1px solid red;
+}
