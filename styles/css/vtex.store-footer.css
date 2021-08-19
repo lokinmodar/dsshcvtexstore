@@ -1,0 +1,24 @@
+.poweredBy{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.poweredByImage {
+  width: 60px;
+}
+
+.socialNetworkWrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.acceptedPaymentMethodContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

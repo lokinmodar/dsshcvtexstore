@@ -1,0 +1,30 @@
+.container{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.shelfContentContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.sliderContainer{
+  width: 90%;
+
+}
+
+.arrowLeft{
+  left: -2rem
+}
+
+.arrowRight{
+  right: -2rem
+}
+.slide{
+  margin: 10px;
+}

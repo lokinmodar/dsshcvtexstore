@@ -3,5 +3,13 @@
   "editor.fontFamily": "Iosevka",
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
-  "explorer.compactFolders": false
+  "explorer.compactFolders": false,
+  "editor.fontSize": 12,
+  "files.autoGuessEncoding": true,
+  "editor.minimap.enabled": false,
+  "editor.minimap.maxColumn": 80,
+  "editor.inlineSuggest.enabled": true,
+  "debug.console.fontSize": 12,
+  "scm.inputFontSize": 12,
+  "terminal.integrated.fontSize": 12
 }

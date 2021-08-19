@@ -1,7 +1,7 @@
 {
   "vendor": "hiringcoders2021",
   "name": "dsshcvtexstore",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -46,7 +46,8 @@
     "vtex.breadcrumb": "1.x",
     "vtex.sticky-layout": "0.x",
     "vtex.add-to-cart-button": "0.x",
-    "vtex.product-list": "0.x"
+    "vtex.product-list": "0.x",
+    "vtex.store-image": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
