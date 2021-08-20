@@ -11,5 +11,6 @@
   "editor.inlineSuggest.enabled": true,
   "debug.console.fontSize": 12,
   "scm.inputFontSize": 12,
-  "terminal.integrated.fontSize": 12
+  "terminal.integrated.fontSize": 12,
+  "blockman.n32BlackListOfFileFormats": "plaintext, markdown, json, jsonc"
 }

@@ -1,6 +1,7 @@
 .bg-base {
   background-color: #232323;
   width: 80%;
+  overflow-y: visible;
 }
 
 .flex-column {
