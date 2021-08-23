@@ -1,0 +1,11 @@
+.container {
+  background: #212121;
+
+}
+
+
+.imageElement {
+  
+  max-height: 200px !important;
+  border-radius: 16px;
+}

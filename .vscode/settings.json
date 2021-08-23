@@ -2,7 +2,6 @@
   "editor.tabSize": 2,
   "editor.fontFamily": "Iosevka",
   "editor.fontLigatures": true,
-  "editor.formatOnSave": true,
   "explorer.compactFolders": false,
   "editor.fontSize": 12,
   "files.autoGuessEncoding": true,
@@ -12,5 +11,15 @@
   "debug.console.fontSize": 12,
   "scm.inputFontSize": 12,
   "terminal.integrated.fontSize": 12,
-  "blockman.n32BlackListOfFileFormats": "plaintext, markdown, json, jsonc"
+  "blockman.n32BlackListOfFileFormats": "plaintext, markdown, json, jsonc, css",
+  "editor.rulers": [80, 120],
+  "workbench.colorCustomizations": {
+    "editorRuler.foreground": "#5F5F5F"
+  },
+  "prettier.jsxSingleQuote": true,
+  "prettier.proseWrap": "always",
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "none",
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wrappingIndent": "deepIndent"
 }

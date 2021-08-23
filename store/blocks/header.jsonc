@@ -38,7 +38,6 @@
     },
     "children": [
       "flex-layout.col#logo-desktop",
-      "flex-layout.col#category-menu",
       "flex-layout.col#spacer",
       "search-bar",
       "locale-switcher",
@@ -51,12 +50,6 @@
       "verticalAlign": "middle"
     },
     "children": ["logo#desktop"]
-  },
-  "flex-layout.col#category-menu": {
-    "props": {
-      "verticalAlign": "middle"
-    },
-    "children": ["vtex.menu@2.x:menu#category-menu"]
   },
   "logo#desktop": {
     "props": {
@@ -87,20 +80,6 @@
       "fullWidth": true
     }
   },
-  "drawer": {
-    "children": ["menu#drawer"]
-  },
-
-  "menu#drawer": {
-    "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
-    ],
-    "props": {
-      "orientation": "vertical"
-    }
-  },
 
   "logo#mobile": {
     "props": {
@@ -108,6 +87,31 @@
       "href": "/",
       "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
       "width": "70"
+    }
+  },
+  "minicart.v2": {
+    "children": ["minicart-base-content"]
+  },
+  "minicart-base-content": {
+    "blocks": ["minicart-product-list", "minicart-summary"]
+  },
+  "minicart-product-list": {
+    "blocks": ["product-list"]
+  },
+  "minicart-summary": {
+    "blocks": ["checkout-summary.compact"]
+  },
+
+  "checkout-summary.compact": {
+    "children": ["summary-totalizers#minicart"],
+    "props": {
+      "totalizersToShow": ["Items", "Discounts"]
+    }
+  },
+  "summary-totalizers#minicart": {
+    "props": {
+      "showTotal": true,
+      "showDeliveryTotal": false
     }
   }
 }

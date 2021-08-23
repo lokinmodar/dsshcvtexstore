@@ -1,5 +1,5 @@
 .bg-base {
-  background-color: #232323;
+  background-color: #303030 !important;
   width: 80%;
   overflow-y: visible;
 }
@@ -7,3 +7,5 @@
 .flex-column {
   width: 80%;
 }
+
+

@@ -1,0 +1,25 @@
+.sliderLayoutContainer--banner {
+
+    display: flex !important;
+    width: 100%;
+    position: absolute !important;
+    top: 160px !important;
+    height: 300px !important;
+    align-items: center !important;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+
+}
+
+.slideChildrenContainer--banner {
+
+  height: 100% !important;
+  width: 100%;
+}
+
+
+.paginationDotsContainer--banner {
+  position: relative !important;
+  margin-top: 10px !important;
+}

@@ -1,0 +1,18 @@
+
+.container .wrapper .paragraph .strong {
+  display: flex;
+  background: #212121;
+  position: absolute;
+  right: 0;
+  width: 50px!important;
+  height: 50px!important;
+  border-radius: 50%!important;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  border: 2px solid #59ff00;
+  color: #59ff00;
+}
+

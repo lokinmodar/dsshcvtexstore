@@ -2,16 +2,8 @@
   "store.home": {
     "blocks": [
       "tab-layout#home",
-      "tab-layout#categorias",
-      "slider-layout"
-      /*       "search-result-layout.customQuery#home", */
-
-      /*  "shelf#example",
-      "minicart-product-list#example" */
-    ],
-    "props": {
-      "color": "red"
-    }
+      "overlay-trigger"
+    ]
   },
   "tab-layout#home": {
     "children": ["tab-list#home", "tab-content#home"],
@@ -19,15 +11,6 @@
       "blockClass": "home",
       "defaultActiveTabId": "home1"
     }
-  },
-  "rich-text": {
-    "props": {
-      "text": "**Hello, World!**",
-      "textPosition": "CENTER"
-    }
-  },
-  "tab-layout#categorias": {
-    "children": []
   },
   "tab-list#home": {
     "children": ["tab-list.item#home1", "tab-list.item#home2"]
@@ -49,27 +32,61 @@
     "children": ["tab-content.item#home1", "tab-content.item#home2"]
   },
   "tab-content.item#home1": {
-    "children": ["shelf#home"],
+    "children": ["slider-layout#banner1", "shelf#home"],
     "props": {
       "tabId": "home1",
       "label": "Home 1"
     }
   },
   "tab-content.item#home2": {
-    "children": [
-      "shelf#home2",
-      "info-card#home" /* ,
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter" */
-    ],
+    "children": ["slider-layout#banner2", "shelf#home2"],
     "props": {
-      "tabId": "home2"
+      "tabId": "home2",
+      "label": "Home 2"
     }
   },
 
+  "slider-layout#banner1": {
+    "children":[ "image#banner1",  "image#banner2"],
+    "props": {
+      "blockClass": "banner",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      }
+    }    
+  },
+  "slider-layout#banner2": {
+    "children":[ "image#banner1",  "image#banner2"],
+    "props": {
+      "blockClass": "banner",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      }
+    }    
+  },
+  "image#banner1": {
+    "props": {
+      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png",
+      "maxHeight": 24,
+      "blockclass": "bannerImg"
+    }
+  },
+  "image#banner2": {
+    "props": {
+      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png",
+      "maxHeight": 24,
+      "blockclass": "bannerImg"
+    }
+  },
   "shelf#home": {
-    "blocks": ["product-summary"]
+    "blocks": ["product-summary"],
+    "props": {
+     "maxItems": 10
+    }
   },
   "shelf#home2": {
     "blocks": ["product-summary"]
@@ -77,20 +94,39 @@
   "minicart-product-list#home": {
     "blocks": ["product-list"]
   },
-
-  "info-card#home": {
+  "rich-text#question": {
     "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
-      "blockClass": "info-card-home",
-      "textAlignment": "center"
+      "text": "**?**",
+      "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER",
+        "textColor": "c-on-emphasis",
+        "font": "t-heading-5",
+        "blockClass": "question"
+      }
     }
+  },
+  "overlay-trigger": {
+    "children": ["rich-text#question", "overlay-layout"]
+  },
+  "overlay-layout": {
+    "props": {
+      "placement": "right"
+    },
+    "children": ["leads-form-component-dss#form"]
+  },
+  "leads-form-component-dss#form":{
+    "props": {}
   }
+
+  /* ,
+  "rich-text#link": {
+    "props": {
+      "text": "\n**Reach us at**\nwww.vtex.com.br",
+      "blockClass": "link"
+    }
+  } */
+
   /*   },
   "search-result-layout.customQuery#home": {
     "props": {

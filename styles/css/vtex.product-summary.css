@@ -1,0 +1,31 @@
+
+.container {
+
+  display: flex  !important;
+  flex-direction: column  !important;
+  flex-wrap: wrap !important;
+  align-items: center  !important;
+  justify-content: center  !important;
+  text-align: center !important;
+  height: 30rem;
+}
+
+.productBrand {
+  color: #59ff00 !important;
+}
+
+.button {
+  background: #59ff00 !important;
+}
+
+.buyButtonContainer {
+
+  display: flex  !important;
+  flex-direction: column  !important;
+  align-items: center  !important;
+  justify-content: center  !important;
+  text-align: center !important;
+}
+.buyButton {
+  width: 100%;
+}
